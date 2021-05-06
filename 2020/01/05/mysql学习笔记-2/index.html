@@ -20,35 +20,28 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
 
 <script class="next-config" data-name="main" type="application/json">{&quot;hostname&quot;:&quot;littletom123.github.io&quot;,&quot;root&quot;:&quot;&#x2F;&quot;,&quot;images&quot;:&quot;&#x2F;images&quot;,&quot;scheme&quot;:&quot;Gemini&quot;,&quot;version&quot;:&quot;8.4.0&quot;,&quot;exturl&quot;:false,&quot;sidebar&quot;:{&quot;position&quot;:&quot;left&quot;,&quot;display&quot;:&quot;post&quot;,&quot;padding&quot;:18,&quot;offset&quot;:12},&quot;copycode&quot;:false,&quot;bookmark&quot;:{&quot;enable&quot;:false,&quot;color&quot;:&quot;#222&quot;,&quot;save&quot;:&quot;auto&quot;},&quot;fancybox&quot;:false,&quot;mediumzoom&quot;:false,&quot;lazyload&quot;:false,&quot;pangu&quot;:false,&quot;comments&quot;:{&quot;style&quot;:&quot;tabs&quot;,&quot;active&quot;:null,&quot;storage&quot;:true,&quot;lazyload&quot;:false,&quot;nav&quot;:null},&quot;motion&quot;:{&quot;enable&quot;:true,&quot;async&quot;:false,&quot;transition&quot;:{&quot;post_block&quot;:&quot;fadeIn&quot;,&quot;post_header&quot;:&quot;fadeInDown&quot;,&quot;post_body&quot;:&quot;fadeInDown&quot;,&quot;coll_header&quot;:&quot;fadeInLeft&quot;,&quot;sidebar&quot;:&quot;fadeInUp&quot;}},&quot;prism&quot;:false,&quot;i18n&quot;:{&quot;placeholder&quot;:&quot;搜索...&quot;,&quot;empty&quot;:&quot;没有找到任何搜索结果：${query}&quot;,&quot;hits_time&quot;:&quot;找到 ${hits} 个搜索结果（用时 ${time} 毫秒）&quot;,&quot;hits&quot;:&quot;找到 ${hits} 个搜索结果&quot;}}</script>
-<meta name="description" content="下载MySQL下载地址：https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F;Navicat下载地址：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1YBYIK_jcb_K_xLchaDEb6Q 提取码：xd7k  安装配置 将下载的zip文件解压到预定目录，如F:\program files\MySQL\；  在MySQL目录下创建一个mu.ini文件，创建的方法为先新建">
+<meta name="description" content="在数据表中的增删改查增首先，学习如何在数据表中插入数据： 1234567891011insert into students values(1, 1, &#39;小明&#39;, &#39;M&#39;, 90),(2, 1, &#39;小红&#39;, &#39;F&#39;, 95),(3, 1, &#39;小军&#39;, &#39;M&#39;, 88),(4, 1, &#39;小米&amp;#3">
 <meta property="og:type" content="article">
-<meta property="og:title" content="MySQL安装教程">
-<meta property="og:url" content="https://littletom123.github.io/2021/05/04/MySQL%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:title" content="mysql学习笔记-2">
+<meta property="og:url" content="https://littletom123.github.io/2020/01/05/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/index.html">
 <meta property="og:site_name" content="Tom的小木屋">
-<meta property="og:description" content="下载MySQL下载地址：https:&#x2F;&#x2F;dev.mysql.com&#x2F;downloads&#x2F;mysql&#x2F;Navicat下载地址：https:&#x2F;&#x2F;pan.baidu.com&#x2F;s&#x2F;1YBYIK_jcb_K_xLchaDEb6Q 提取码：xd7k  安装配置 将下载的zip文件解压到预定目录，如F:\program files\MySQL\；  在MySQL目录下创建一个mu.ini文件，创建的方法为先新建">
+<meta property="og:description" content="在数据表中的增删改查增首先，学习如何在数据表中插入数据： 1234567891011insert into students values(1, 1, &#39;小明&#39;, &#39;M&#39;, 90),(2, 1, &#39;小红&#39;, &#39;F&#39;, 95),(3, 1, &#39;小军&#39;, &#39;M&#39;, 88),(4, 1, &#39;小米&amp;#3">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://gitee.com/littetom/picgo/raw/master/Mysql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B1.PNG">
-<meta property="og:image" content="https://gitee.com/littetom/picgo/raw/master/52d94c92878175a97a33322209bc94b.png">
-<meta property="og:image" content="https://gitee.com/littetom/picgo/raw/master/2020050914244237.png">
-<meta property="og:image" content="https://gitee.com/littetom/picgo/raw/master/20210506203058.png">
-<meta property="og:image" content="https://gitee.com/littetom/picgo/raw/master/20210506203208.png">
-<meta property="article:published_time" content="2021-05-04T10:09:27.000Z">
-<meta property="article:modified_time" content="2021-05-06T12:45:45.736Z">
+<meta property="article:published_time" content="2020-01-05T12:51:42.000Z">
+<meta property="article:modified_time" content="2020-01-05T13:03:24.000Z">
 <meta property="article:author" content="Little Tom">
 <meta property="article:tag" content="mysql">
-<meta property="article:tag" content="软件安装">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://gitee.com/littetom/picgo/raw/master/Mysql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B1.PNG">
 
 
-<link rel="canonical" href="https://littletom123.github.io/2021/05/04/MySQL%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+<link rel="canonical" href="https://littletom123.github.io/2020/01/05/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;littletom123.github.io&#x2F;2021&#x2F;05&#x2F;04&#x2F;MySQL%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B&#x2F;&quot;,&quot;path&quot;:&quot;2021&#x2F;05&#x2F;04&#x2F;MySQL安装教程&#x2F;&quot;,&quot;title&quot;:&quot;MySQL安装教程&quot;}</script>
+<script class="next-config" data-name="page" type="application/json">{&quot;sidebar&quot;:&quot;&quot;,&quot;isHome&quot;:false,&quot;isPost&quot;:true,&quot;lang&quot;:&quot;zh-CN&quot;,&quot;comments&quot;:true,&quot;permalink&quot;:&quot;https:&#x2F;&#x2F;littletom123.github.io&#x2F;2020&#x2F;01&#x2F;05&#x2F;mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2&#x2F;&quot;,&quot;path&quot;:&quot;2020&#x2F;01&#x2F;05&#x2F;mysql学习笔记-2&#x2F;&quot;,&quot;title&quot;:&quot;mysql学习笔记-2&quot;}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">&quot;&quot;</script>
-<title>MySQL安装教程 | Tom的小木屋</title><script src="/js/config.js"></script>
+<title>mysql学习笔记-2 | Tom的小木屋</title><script src="/js/config.js"></script>
   
 
 
@@ -127,7 +120,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.</span> <span class="nav-text">下载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">安装配置</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%A8%E6%95%B0%E6%8D%AE%E8%A1%A8%E4%B8%AD%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5"><span class="nav-number">1.</span> <span class="nav-text">在数据表中的增删改查</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A2%9E"><span class="nav-number">1.1.</span> <span class="nav-text">增</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5"><span class="nav-number">1.2.</span> <span class="nav-text">查</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9F%BA%E6%9C%AC%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.2.1.</span> <span class="nav-text">基本查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%9D%A1%E4%BB%B6%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.2.2.</span> <span class="nav-text">条件查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9F%A5%E8%AF%A2"><span class="nav-number">1.2.3.</span> <span class="nav-text">函数查询</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E6%9F%A5%E8%AF%A2%EF%BC%88%E5%8C%B9%E9%85%8D-%E6%A8%A1%E7%B3%8A%E5%8C%B9%E9%85%8D%EF%BC%89"><span class="nav-number">1.2.4.</span> <span class="nav-text">正则表达查询（匹配&#x2F;模糊匹配）</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -201,7 +194,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://littletom123.github.io/2021/05/04/MySQL%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="https://littletom123.github.io/2020/01/05/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -214,7 +207,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          MySQL安装教程
+          mysql学习笔记-2
         </h1>
 
         <div class="post-meta-container">
@@ -224,16 +217,10 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2021-05-04 18:09:27" itemprop="dateCreated datePublished" datetime="2021-05-04T18:09:27+08:00">2021-05-04</time>
+      <time title="创建时间：2020-01-05 20:51:42 / 修改时间：21:03:24" itemprop="dateCreated datePublished" datetime="2020-01-05T20:51:42+08:00">2020-01-05</time>
     </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">更新于</span>
-        <time title="修改时间：2021-05-06 20:45:45" itemprop="dateModified" datetime="2021-05-06T20:45:45+08:00">2021-05-06</time>
-      </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-folder"></i>
@@ -254,41 +241,34 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p>MySQL下载地址：<a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a><br>Navicat下载地址：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1YBYIK_jcb_K_xLchaDEb6Q">https://pan.baidu.com/s/1YBYIK_jcb_K_xLchaDEb6Q</a> 提取码：xd7k </p>
-<h1 id="安装配置"><a href="#安装配置" class="headerlink" title="安装配置"></a>安装配置</h1><ol>
-<li><p>将下载的zip文件解压到预定目录，如F:\program files\MySQL\；</p>
-</li>
-<li><p>在MySQL目录下创建一个mu.ini文件，创建的方法为先新建一个txt文件，然后修改后缀名；</p>
-</li>
-<li><p>在my.ini文件中输入如下的基本配置内容：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">[mysqld]</span><br><span class="line"># 设置3306端口</span><br><span class="line">port&#x3D;3306</span><br><span class="line"># 设置mysql的安装目录</span><br><span class="line">basedir&#x3D;D:\\Program Files\\MySQL</span><br><span class="line"># 设置mysql数据库的数据的存放目录</span><br><span class="line">#datadir&#x3D;D:\\Program Files\\MySQL\\Data </span><br><span class="line"># 允许最大连接数</span><br><span class="line">max_connections&#x3D;200</span><br><span class="line"># 允许连接失败的次数。</span><br><span class="line">max_connect_errors&#x3D;10</span><br><span class="line"># 服务端使用的字符集默认为utf8mb4</span><br><span class="line">character-set-server&#x3D;utf8mb4</span><br><span class="line"># 创建新表时将使用的默认存储引擎</span><br><span class="line">default-storage-engine&#x3D;INNODB</span><br><span class="line"># 默认使用“mysql_native_password”插件认证</span><br><span class="line">#mysql_native_password</span><br><span class="line">default_authentication_plugin&#x3D;mysql_native_password</span><br><span class="line">[mysql]</span><br><span class="line"># 设置mysql客户端默认字符集</span><br><span class="line">default-character-set&#x3D;utf8mb4</span><br><span class="line">[client]</span><br><span class="line"># 设置mysql客户端连接服务端时默认使用的端口</span><br><span class="line">port&#x3D;3306</span><br><span class="line">default-character-set&#x3D;utf8mb4</span><br></pre></td></tr></table></figure>
-<p>其中需要注意的是第5行需要根据自己的安装路径进行设置。</p>
-</li>
-<li><p>配置环境变量</p>
-</li>
-</ol>
-<p><img src="https://gitee.com/littetom/picgo/raw/master/Mysql%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B1.PNG"><br><img src="https://gitee.com/littetom/picgo/raw/master/52d94c92878175a97a33322209bc94b.png"></p>
-<p>其中需要注意的是，在设置环境变量时，设置的路径是mysql的安装路径。</p>
-<ol start="5">
-<li>MySQL初始化</li>
-</ol>
-<p>以管理员身份运行cmd，并执行以下命令：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --initialize --console</span><br></pre></td></tr></table></figure>
-<p>执行该命令后最后一个冒号后面的字符串即为登录密码，需要记录下来。<br><img src="https://gitee.com/littetom/picgo/raw/master/2020050914244237.png"></p>
-<p>接下来需要安装并启动MySQL，在cmd中输入以下命令。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --install</span><br></pre></td></tr></table></figure>
+        <h1 id="在数据表中的增删改查"><a href="#在数据表中的增删改查" class="headerlink" title="在数据表中的增删改查"></a>在数据表中的增删改查</h1><h2 id="增"><a href="#增" class="headerlink" title="增"></a>增</h2><p>首先，学习如何在数据表中插入数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">insert into students values</span><br><span class="line">(1, 1, &#39;小明&#39;, &#39;M&#39;, 90),</span><br><span class="line">(2, 1, &#39;小红&#39;, &#39;F&#39;, 95),</span><br><span class="line">(3, 1, &#39;小军&#39;, &#39;M&#39;, 88),</span><br><span class="line">(4, 1, &#39;小米&#39;, &#39;F&#39;, 73),</span><br><span class="line">(5, 2, &#39;小白&#39;, &#39;F&#39;, 81),</span><br><span class="line">(6, 2, &#39;小兵&#39;, &#39;M&#39;, 55),</span><br><span class="line">(7, 2, &#39;小林&#39;, &#39;M&#39;, 85),</span><br><span class="line">(8, 3, &#39;小新&#39;, &#39;F&#39;, 91),</span><br><span class="line">(9, 3, &#39;小王&#39;, &#39;M&#39;, 89),</span><br><span class="line">(10, 3, &#39;小丽&#39;, &#39;F&#39;, 85);</span><br></pre></td></tr></table></figure>
 
-<p>启动MySQL服务<code>net start mysql</code></p>
-<ol start="6">
-<li><p>安装Navicat<br>Navicat的安装和一般软件的安装过程一样，这里不再赘述，只要根据安装指导安装即可。</p>
-</li>
-<li><p>Navicat连接MySQL并修改密码<br>创建一个MySQL连接</p>
-</li>
+<p><code>insert into table_name values(datas);</code>命令可以将数据’data’插入到表当中。再插入数据时需要注意，data必须和定义表时的类型以及顺序一一对应。</p>
+<h2 id="查"><a href="#查" class="headerlink" title="查"></a>查</h2><h3 id="基本查询"><a href="#基本查询" class="headerlink" title="基本查询"></a>基本查询</h3><p>创建了表，下面我们来看一看表中的内容：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">select * from students;</span><br></pre></td></tr></table></figure>
+
+<p><code>select column_names from table_name;</code>命令可以查看某数据表中的某列的信息。</p>
+<h3 id="条件查询"><a href="#条件查询" class="headerlink" title="条件查询"></a>条件查询</h3><p>进一步的，如果需要查看满足某一条件的数据信息，可以利用下面的命令进行操作：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select column_names from table_name</span><br><span class="line">where conditions;</span><br></pre></td></tr></table></figure>
+<p>‘where’后的条件可以由不同的操作符进行控制，具体的操作符可以参考<a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-where-clause.html">这里</a>。<br>例如:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select name from students</span><br><span class="line">where gender &#x3D; &#39;M&#39;;</span><br></pre></td></tr></table></figure>
+<p>就可以查看students表中所有男同学的姓名。</p>
+<h3 id="函数查询"><a href="#函数查询" class="headerlink" title="函数查询"></a>函数查询</h3><p>数据库中的查询操作还可以和一些函数结合起来，得到由原始数据加工的数据结果，如均值、最大值、最小值等便可以直接通过函数得到。命令如下:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">select avg(score) from students</span><br><span class="line">where gender &#x3D; &#39;M&#39;;</span><br></pre></td></tr></table></figure>
+<p>其实就行把原来要的查询的列名改成函数即可。<br>常用的函数可参考<a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-functions.html">这里</a>。</p>
+<h3 id="正则表达查询（匹配-模糊匹配）"><a href="#正则表达查询（匹配-模糊匹配）" class="headerlink" title="正则表达查询（匹配/模糊匹配）"></a>正则表达查询（匹配/模糊匹配）</h3><p>在实际中，通过操作符进行的简单操作查询主要是针对数据条件进行操作的，但是我们经常也会对字符串数据进行条件查询，这就需要正则查询了。</p>
+<p>所谓正则查询就是利用正则表达式来进行查询操作，通过正则表达可以进行模糊匹配查询。</p>
+<p>在sql中常用的正则表达由四种通配符构成。</p>
+<blockquote>
+<ol>
+<li>‘%’：表示0个或多个任意字符。如：’a%’表示以a开头的任意字符串。</li>
+<li>‘_’：表示任意单个字符。如：’_a’表示以a结尾且只有两个字符的任意字符串。</li>
+<li>‘[ ]’：表示匹配[]中的任意一个字符串。</li>
+<li>‘[^]’：表示匹配不在[]中的任意字符串。</li>
 </ol>
-<p><img src="https://gitee.com/littetom/picgo/raw/master/20210506203058.png"></p>
-<p>输入连接名称(根据需要自己起名字)、用户名、密码即可连接。<br><img src="https://gitee.com/littetom/picgo/raw/master/20210506203208.png"></p>
-<p>初次连接MySQLNavicat会提示修改密码，根据提示修改密码即可。</p>
-<p>到此，MySQL的安装过程全部结束。</p>
+</blockquote>
+<p>更多的通配符可以参考<a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-regexp.html">这里</a>。</p>
 
     </div>
 
@@ -299,20 +279,19 @@
     <footer class="post-footer">
           <div class="post-tags">
               <a href="/tags/mysql/" rel="tag"># mysql</a>
-              <a href="/tags/%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" rel="tag"># 软件安装</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2020/01/05/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-2/" rel="prev" title="mysql学习笔记-2">
-                  <i class="fa fa-chevron-left"></i> mysql学习笔记-2
+                <a href="/2020/01/02/mysql%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-1/" rel="prev" title="mysql学习笔记-1">
+                  <i class="fa fa-chevron-left"></i> mysql学习笔记-1
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/05/06/MySQL%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0-3/" rel="next" title="mysql学习笔记-3">
-                  mysql学习笔记-3 <i class="fa fa-chevron-right"></i>
+                <a href="/2021/05/04/MySQL%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B/" rel="next" title="MySQL安装教程">
+                  MySQL安装教程 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
